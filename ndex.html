@@ -1,0 +1,46 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./java.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" placeholder="Input Lekan or Bolu" id="userInput">
+    <button onclick="text()">Input</button><br><br>
+    <p id="mode"></p>
+    <!-- <input type="text" placeholder="Female">
+     <button onclick="girl()">Girl</button> -->
+
+    <script>
+        function text() {
+            var mode=document.getElementById("userInput").value
+            // console.log(typeof (name))
+            if (  mode==`Ayo`){
+                console.log(`Ayo is a male`)
+                document.getElementById(`mode`).innerHTML= `${mode} is a male`
+                console.log(typeof(mode))
+                // console.log(typeof(name)) 
+            }
+            else if (mode == `Ajoke`) {
+                console.log(`Ajoke is a female`)
+                document.getElementById(`mode`).innerHTML= `${mode} is a female`
+                // console.log(typeof(mode))
+                // console.log(typeof())
+            }
+            else {
+                console.log("choose from give option")
+            }
+        }
+        // function text (){
+        //     var userInput = document.getElementById
+        // }
+    </script>
+
+
+</body>
+
+</html>
